@@ -1,18 +1,19 @@
-
 function Navbar() {
   return (
     <div className="navBarContainer">
-      <div className="logo">Logo</div>
-      <div className="linksWrapper">
-        <div className="about">About us</div>
-        <div className="events">Events</div>
-        <div className="faq">FAQ</div>
-        <div className="sponsors">Sponsors & Exhibitors </div>
+      <div className="logoWrapper">
+        <h1 className="logo">Logo</h1>
+        <ul className="linksWrapper">
+          <li className="about">About us</li>
+          <li className="events">Events</li>
+          <li className="faq">FAQ</li>
+          <li className="sponsors">Sponsors & Exhibitors</li>
+        </ul>
       </div>
-      <div className="input">
-        <input></input>
-        <div>My Afrima</div>
-      </div>
+      <form className="form">
+        <input className="formInput"></input>
+        <submit className="button">My Afrima</submit>
+      </form>
     </div>
   );
 }
