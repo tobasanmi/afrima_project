@@ -51,7 +51,7 @@
     text-align: center;
     margin-right: 50px;
     font-size: 15px;
-    height:20px;
+    height:35px;
     width:100px;
 }
 .formInput{
@@ -62,4 +62,31 @@
     margin-right: 20px;
     width:300px;
     height:30px;
+}
+.landinpageWrapper{
+    background-color: #686868;
+    height:600px;
+}
+.landingPage{
+    display:flex;
+}
+.iconWrapper{
+    text-align: center;
+    margin: 100px 0px 200px 100px;
+    color:white;
+}
+.iconList{
+    list-style-type: none;
+    margin:10px;
+    font-size: 30px;
+}
+.pipeBottom,.pipeTop{
+    color:white;
+    font-size: 20px;
+    margin-left: 30px;
+}
+.wordingsWrapper{
+    margin: 150px 0px 100px 10px;
+    color:white;
+    width:400px;
 }

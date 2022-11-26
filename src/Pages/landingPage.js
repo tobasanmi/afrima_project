@@ -1,30 +1,34 @@
-import React from 'react'
+import React from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import image1 from "../images/CANEX1.png";
+import image2 from "../images/CANEX2.png";
+import image3 from "../images/landingImage1.png";
 
 export default function LandingPage() {
   return (
     <div className="landinpageWrapper">
-      <div classname="landingPage">
-      <div className="iconWrapper">
-        <div>pipeTop</div>
-        <ul>
-          <li>twitter</li>
-          <li>fb</li>
-          <li>instagram</li>
-          <li>linkedIn</li>
-          <li>Youtube</li>
-        </ul>
-        <div>PipeBottom</div>
+      <div className="landingPage">
+        <div className="iconWrapper">
+          <div className="pipeTop">|</div>
+          <ul>
+            <li className="iconList"><i className='fa fa-twitter'></i></li>
+            <li className="iconList"><i className='fa fa-facebook'></i></li>
+            <li className="iconList"><i className='fa fa-instagram'></i></li>
+            <li className="iconList"><i className='fa fa-linkedin'></i></li>
+            <li className="iconList"><i className='fa fa-youtube'></i></li>
+          </ul>
+          <div className="pipeBottom">|</div>
+        </div>
+        <div className="wordingsWrapper">
+          <h1>
+            CREATIVE AFRICA NEXUS (CAREX) <span>WKND</span>
+            25-27 NOVEMBER 2022
+          </h1>
+          <h3>Ivory coast</h3>
+          <button type="button" class="btn btn-info">Register Now</button>
+        </div>
       </div>
-      <div className="wordingsWrapper">
-        <h1>
-          CREATIVE AFRICA NEXUS (CAREX) <span>WKND</span>
-          25-27 NOVEMBER 2022
-        </h1>
-        <h3>Ivory coast</h3>
-        <a href="#home">Register Now</a>
-      </div>
-      </div>
-      
     </div>
   );
 }
