@@ -1,92 +1,182 @@
-.navBarContainer{
-    background-color: #ffd916;  
+.navBarContainer {
+    background-color: #ffd916;
     width: 100%;
-    height:100px;
+    height: 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.linksWrapper{
+
+.linksWrapper {
     display: flex;
     align-items: center;
 
 }
-.input{
+
+.input {
     display: flex;
     justify-content: space-around;
 }
-.logoWrapper{
+
+.logoWrapper {
     color: grey;
-    font-size : 20px;
+    font-size: 20px;
     display: flex;
     height: 100px;
-    margin-right:150px;
+    margin-right: 150px;
 }
-.form{
+
+.form {
     /* background-color: aqua; */
-    height:30px;
+    height: 30px;
     text-align: center;
     display: flex;
     justify-content: space-around;
 }
-.about,.events,.faq,.sponsors{
+
+.about,
+.events,
+.faq,
+.sponsors {
     list-style-type: none;
-    margin : 10px;
-    cursor:pointer;
+    margin: 10px;
+    cursor: pointer;
 }
-.about:hover,.events:hover,.faq:hover,.sponsors:hover{
+
+.about:hover,
+.events:hover,
+.faq:hover,
+.sponsors:hover {
     list-style-type: none;
-    margin : 10px;
+    margin: 10px;
     border-bottom: 2px solid red;
-    color:green;
+    color: green;
 }
-.button{
+
+.button {
     background: #686868;
     border-radius: 5px;
     border-color: #686868;
     color: #fff;
-    cursor:pointer;
-    padding-bottom:10px;
-    padding-top:5px;
+    cursor: pointer;
+    padding-bottom: 10px;
+    padding-top: 5px;
     text-align: center;
     margin-right: 50px;
     font-size: 15px;
-    height:35px;
-    width:100px;
+    height: 35px;
+    width: 100px;
 }
-.formInput{
+
+
+.formInput {
     background: #fff;
     border-color: transparent;
     border-radius: 5px;
     opacity: 38%;
     margin-right: 20px;
-    width:300px;
-    height:30px;
+    width: 300px;
+    height: 30px;
 }
-.landinpageWrapper{
+
+.landinpageWrapper {
     background-color: #686868;
-    height:600px;
+    height: 600px;
 }
-.landingPage{
-    display:flex;
+
+.landingPage {
+    display: flex;
 }
-.iconWrapper{
+
+.iconWrapper {
     text-align: center;
     margin: 100px 0px 200px 100px;
-    color:white;
+    color: white;
 }
-.iconList{
+
+.iconList {
     list-style-type: none;
-    margin:10px;
+    margin: 10px;
     font-size: 30px;
 }
-.pipeBottom,.pipeTop{
-    color:white;
+
+.pipeBottom,
+.pipeTop {
+    color: white;
     font-size: 20px;
     margin-left: 30px;
 }
-.wordingsWrapper{
+
+.wordingsWrapper {
     margin: 150px 0px 100px 10px;
-    color:white;
-    width:400px;
+    color: white;
+    width: 400px;
+}
+
+.navBar2Wrapper {
+    background: blue;
+}
+
+.navBar2ListContainer {
+    display: flex;
+    justify-content: space-evenly;
+    height: 50px;
+    text-align: center;
+    background: green;
+}
+
+.whoWeAreContainer,
+.creativeAndCultural,
+.nexusProgramme,
+.objectives {
+    display: flex;
+    justify-content: space-around; 
+    align-items: center;
+
+}
+
+/* contactForm  styling*/
+
+.contactFormWrapper{
+    display:flex;
+    justify-content: space-around;
+    width:70%;
+    align-content: center;
+    align-items: center;
+    margin: 50px 200px 100px 200px;
+    height: 500px;
+    box-shadow: 8px 13px 12px 1px rgba(229,235,226,0.84);
+-webkit-box-shadow: 8px 13px 12px 1px rgba(229,235,226,0.84);
+-moz-box-shadow: 8px 13px 12px 1px rgba(229,235,226,0.84);
+}
+
+.contactFormHeading{
+    color: #00aa8c;
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 61px;
+}
+.name{
+    background: #f6f6f6;
+    border-color: #f6f6f6;
+    height: 60px;
+}
+.email{
+    background: #f6f6f6;
+    border-color: #f6f6f6;
+    height: 60px;
+}
+.textarea{
+    background: #f6f6f6;
+    border-color: #f6f6f6;
+    height: 199px;
+}
+.submitButton{
+    background: #00aa8c;
+    border-color: #00aa8c;
+    width:410px;
+    height: 50px;
+    padding:10px;
+    text-align: center;
+    margin-left: 0px;
 }
