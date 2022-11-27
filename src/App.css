@@ -38,9 +38,10 @@
 .events,
 .faq,
 .sponsors {
-    list-style-type: none;
     margin: 10px;
     cursor: pointer;
+    text-decoration: none;
+    color:#686868
 }
 
 .about:hover,
@@ -51,6 +52,7 @@
     margin: 10px;
     border-bottom: 2px solid red;
     color: green;
+    text-decoration: none;
 }
 
 .button {
@@ -179,4 +181,7 @@
     padding:10px;
     text-align: center;
     margin-left: 0px;
+}
+li{
+    list-style-type: none;
 }
