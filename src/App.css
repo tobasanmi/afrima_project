@@ -25,6 +25,10 @@
     height: 100px;
     margin-right: 150px;
 }
+.logo{
+    width:200px;
+    margin-top:10px
+}
 
 .form {
     /* background-color: aqua; */
@@ -82,8 +86,9 @@
 }
 
 .landinpageWrapper {
-    background-color: #686868;
+    /* background-color: #686868; */
     height: 600px;
+    background-image: url("./images/CANEX1.png");
 }
 
 .landingPage {
@@ -134,9 +139,13 @@
     display: flex;
     justify-content: space-around; 
     align-items: center;
+    width:100%;
 
 }
-
+.whoWeAreWrapper{
+    width:50%;
+    margin:30px;
+}
 /* contactForm  styling*/
 
 .contactFormWrapper{
@@ -183,5 +192,11 @@
     margin-left: 0px;
 }
 li{
-    list-style-type: none;
+    list-style-type:none
+}
+.images{
+    width:50%;
+    border-radius:50%;
+    height:600px;
+    margin:20px;
 }

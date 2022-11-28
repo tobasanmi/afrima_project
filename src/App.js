@@ -5,18 +5,21 @@ import Navbar from "./components/Navbar"
 import Navbar2 from './components/Navbar2';
 import About from './Pages/About';
 import LandingPage from './Pages/landingPage';
+import Event from './Pages/Event';
 
 function App() {
   return (
     <div className="App">
       <Routes> 
         <Route exact path ="/" element={<About/>}/>
+        <Route exact path ="/events" element={<Event/>}/>
       </Routes>
      {/* <Navbar/>
      <LandingPage/>
      <Navbar2/> */}
      {/* <About/> */}
      {/* <ContactForm/> */}
+     {/* <Event/> */}
     </div>
   );
 }
