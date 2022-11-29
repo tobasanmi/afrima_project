@@ -9,7 +9,7 @@ export default function ContactForm() {
 
       <div className="contactForm">
       <h1 className="contactFormHeading">Contact us</h1>
-        <p>
+        <p className="contactParagraph">
           Should you wish to exihibit at Afrima or if you would like to know more
         </p>
       <form>

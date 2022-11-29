@@ -21,12 +21,12 @@ export default function LandingPage() {
           <div className="pipeBottom">|</div>
         </div>
         <div className="wordingsWrapper">
-          <h1>
+          <h1 className="landingPageWordingsHeader">
             CREATIVE AFRICA NEXUS (CAREX) <span>WKND</span>
             25-27 NOVEMBER 2022
           </h1>
-          <h3>Ivory coast</h3>
-          <button type="button" class="btn btn-info">Register Now</button>
+          <h3>Senegal</h3>
+          <button type="button" className="btn btn-info registerButton">Register Now</button>
         </div>
       </div>
     </div>

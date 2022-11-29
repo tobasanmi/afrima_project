@@ -5,6 +5,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position:sticky;
+    top:0px;
 }
 
 .linksWrapper {
@@ -44,10 +46,12 @@
 .sponsors {
     margin: 10px;
     cursor: pointer;
-    text-decoration: none;
-    color:#686868
+    text-decoration: none; 
+    color:#686868;
 }
-
+.navList{
+    list-style-type: none;
+}
 .about:hover,
 .events:hover,
 .faq:hover,
@@ -139,12 +143,16 @@
     display: flex;
     justify-content: space-around; 
     align-items: center;
-    width:100%;
+    width:90%;
+    margin: 0 auto;
 
 }
+.whoWeAreHeader{margin: 20px;}
+/* .whoWeAreContainer{background-image: url("./images/landingImage1.png");} */
 .whoWeAreWrapper{
     width:50%;
     margin:30px;
+    /* background-image: url("./images/afrimaLogo.png"); */
 }
 /* contactForm  styling*/
 
@@ -192,11 +200,138 @@
     margin-left: 0px;
 }
 li{
-    list-style-type:none
+    list-style-type:symbols("./images/afrimaLogo.png")
 }
 .images{
     width:50%;
     border-radius:50%;
     height:600px;
     margin:20px;
+}
+.hamburger{
+    display: none
+}
+p{
+    text-align: justify;
+}
+
+      /* Media Query for Mobile Devices */
+      @media (max-width: 480px) {
+        body{
+            /* background:red; */
+            width :100%;
+        }
+        .landinpageWrapper{
+            height: 300px;
+        }
+        .iconWrapper{
+            margin:10px;
+        }
+        .iconList{
+            font-size: 15px;
+        }
+        .wordingsWrapper{
+            margin-top:60px;
+            width:200px;
+        }
+        .landingPageWordingsHeader{
+            font-size: 20px;
+        }
+        .pipeBottom,
+        .pipeTop{
+            margin-left:40px
+        }
+        .registerButton{
+            width:150px;
+        }
+        .whoWeAreContainer,
+        .creativeAndCultural,
+        .nexusProgramme,
+        .objectives
+        {
+            display:block;
+            width:90%;
+        }
+        .whoWeAreHeader{
+            margin:10px;
+            font-size:20px;
+        }
+        .whoWeAreWrapper{
+            width:80%;
+            margin:20px;
+        }
+        .images{
+            width:70%;
+            border-radius: 0%;
+            height: 400px;
+        }
+        .contactFormWrapper{
+            width:100%;
+            margin-left:0px
+        }
+        .contactFormHeading{
+            font-size:30px;
+            margin-left: 40px;
+        }
+        .contactParagraph{
+            width:60%;
+            font-size: 15px;
+            margin-left: 10px;
+        }
+        .name, .email,.textarea{
+            width:200px;
+            margin-right: 10px;
+
+        }
+        .submitButton{
+            width:200px;
+        }
+        .contactByEmail{
+            display :none
+        }
+        .contactForm{
+            margin-left:60px;
+        }
+        .navBarContainer{
+            text-align :center;
+            position:relative;
+        }
+        .hamburger{
+            display: inline;
+            margin-top: 20px;
+            margin-left: 30px;
+        }
+        .form{display:none;
+        }
+        .linksWrapper{
+            display:none;
+        }
+        .showMenu{
+           position:absolute;
+           display: flex;
+           text-align:center;
+           top:100px;
+           width:100%;
+           background-color: #ffd916;
+           z-index:20;
+
+        }
+
+    }
+    /* Media query for Tablets */
+
+    @media (max-width: 768px) {
+   .about,.events{
+    font-size: 20px;
+   }
+   .linksWrapper{
+    width : 100%;
+   }
+   .form{
+    display:none;
+   }
+   .button{
+    width:200px;
+   }
+   
 }

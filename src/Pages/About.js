@@ -1,5 +1,6 @@
 import React from "react";
 import image1 from "../images/CANEX1.png";
+import afrimalogo from "../images/afrimaLogo.png"
 import ContactForm from "../components/contactForm";
 import Navbar from "../components/Navbar";
 import LandingPage from "./landingPage";
@@ -11,8 +12,8 @@ export default function About() {
       <LandingPage />
       <div className="aboutContainer">
         <div className="whoWeAreContainer">
-          <div>
-            <h3>Who we are </h3>
+          <div className="whoWeAreWrapper">
+            <h3 className="whoWeAreHeader">Who we are </h3>
             <p>
               All Africa Music Awards, AFRIMA, in partnership with the African
               Union Commission, AUC, is an innovative awards platform that
@@ -97,32 +98,17 @@ export default function About() {
           <img
             className="images"
             alt=""
-            src={
-              "https://cms.canex.africa/wp-content/uploads/2022/10/canex-music.png"
-            }
+            src={afrimalogo}
           ></img>
           <div>
-            <h3>Objectives </h3>
-            <p>
-              Lorem ipsun dolor glascow Lorem ipsum dolor sit amet, consectetur
-              adipiscing elit. Quisque blandit ut nulla a pretium. Nunc mattis
-              urna odio, vel interdum velit imperdiet in. Aenean vulputate
-              venenatis magna id consequat. Sed pellentesque feugiat feugiat. In
-              at eleifend arcu. Vivamus semper odio a iaculis malesuada.
-              Curabitur nec turpis vitae odio vestibulum accumsan nec non nisl.
-              Vivamus sed congue leo. Ut fringilla feugiat libero sed
-              condimentum. Sed at libero non nunc gravida congue vitae at erat.
-              Pellentesque ut est a ante maximus posuere. Mauris lacinia blandit
-              arcu. Integer purus turpis, pharetra vel turpis ut, volutpat
-              interdum quam. Suspendisse at erat quam. Aliquam eget diam orci.
-              Phasellus sollicitudin nibh eu nisi tempor, in gravida lacus
-              lobortis. Nulla sit amet tempor tortor, quis pharetra ligula.
-              Quisque mattis egestas mi quis egestas. Curabitur pulvinar
-              consequat enim pharetra fermentum. Duis eleifend nibh quis
-              elementum posuere. Cras eu placerat quam. Nullam porttitor est
-              nibh, id sodales augue consectetur id. Aenean porta nisl at
-              posuere mattis.
-            </p>
+            <h3>AFRIMA FACTS </h3>
+              <ul>
+                <li>AFRIMA is a combined effort by music professionals across the continent aimed at celebrating the rich musical heritage of African continent.</li>
+                <li>About 44 countries vied to be the host of the iconic continental award AFRIMA.</li>
+                <li>Nigeria won the right to host AFRIMA for three years (2014-2016).</li>
+                <li>AFRIMA is spearheaded by a group of professionals and music stakeholders known as the International Committee.</li>
+                <li>The theme of the maiden edition of the All Africa Music Awards is “For Hope, For Celebration”. It revolves round the universal power of music as a tool of unity in the African continent despite the challenges it faces.</li>
+              </ul>
           </div>
         </div>
       </div>
