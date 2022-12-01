@@ -1,5 +1,7 @@
 import React from "react";
-import image1 from "../images/landingImage1.png";
+import image1 from "../images/afrima2.jpg";
+import image2 from "../images/afrima1.jpg";
+import image3 from "../images/afrima3.jpg";
 import Navbar from "../components/Navbar";
 import LandingPage from "./landingPage";
 
@@ -48,7 +50,7 @@ export default function Event() {
             className="images"
             alt=""
             src={
-              "https://cms.canex.africa/wp-content/uploads/2022/10/canex-fashion.png"
+              image3
             }
           ></img>
           <div>

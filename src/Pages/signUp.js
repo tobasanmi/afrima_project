@@ -1,8 +1,10 @@
 import axios from "axios";
 import React, {useState} from "react";
+import {useNavigate} from "react-router-dom";
 
 
-export default function Signup() {
+export default function Signup({props}) {
+   const history = useNavigate()
     const [input, setInput] = useState({
         firstname: "",
         lastname: "",
@@ -17,9 +19,12 @@ export default function Signup() {
    const handleSubmit = (e)=> {
     e.preventDefault()
     axios.post("https://real-pink-badger-wig.cyclic.app/api/v1/user/newUser", input)
-    .then(res => console.log(res, ">>>"))
+    .then(res => {console.log(res,"res")
+    if(res.status == 201){
+      history("/");
+    }}
+    )
     .catch(err => console.log(err))
-    console.log(input, ">>>");
    }
   return (
     <div className="signUpContainer">
@@ -36,6 +41,7 @@ export default function Signup() {
                 
                 className="form-control signUpFirstName"
                 placeholder="Firstname"
+                required
               />
             </div>
           </div>
@@ -48,6 +54,7 @@ export default function Signup() {
                 onChange={handleChange}
                 className="form-control signUpLastName"
                 placeholder="Lastname"
+                required
               />
             </div>
           </div>
@@ -60,6 +67,7 @@ export default function Signup() {
                 onChange={handleChange}
                 className="form-control signUpEmail"
                 placeholder="enter your email address"
+                required
               />
             </div>
           </div>
@@ -73,6 +81,7 @@ export default function Signup() {
                 className="form-control"
                 id="inputPassword"
                 placeholder=" Password"
+                required
               />
             </div>
           </div>

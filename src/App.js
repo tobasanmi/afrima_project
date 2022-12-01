@@ -11,17 +11,12 @@ import Signup from './Pages/signUp';
 function App() {
   return (
     <div className="App">
-      {/* <Routes> 
+      <Routes> 
         <Route exact path ="/" element={<About/>}/>
         <Route exact path ="/events" element={<Event/>}/>
-      </Routes> */}
-     {/* <Navbar/>
-     <LandingPage/>
-     <Navbar2/> */}
-     {/* <About/> */}
-     {/* <ContactForm/> */}
-     {/* <Event/> */}
-     <Signup/>
+        <Route exact path ="/register" element={<Signup/>}/>
+      </Routes>
+     
     </div>
   );
 }

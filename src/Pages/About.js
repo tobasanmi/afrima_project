@@ -1,5 +1,7 @@
 import React from "react";
 import image1 from "../images/CANEX1.png";
+import image2 from "../images/afrima2.jpg";
+import image3 from "../images/afrima3.jpg";
 import afrimalogo from "../images/afrimaLogo.png"
 import ContactForm from "../components/contactForm";
 import Navbar from "../components/Navbar";
@@ -35,14 +37,14 @@ export default function About() {
               in music and artistry.
             </p>
           </div>
-          <img className="images" alt="" src={image1}></img>
+          <img className="images" alt="" src={image2}></img>
         </div>
         <div className="creativeAndCultural">
           <img
             className="images"
             alt=""
             src={
-              "https://cms.canex.africa/wp-content/uploads/2022/10/canex-fashion.png"
+              image3
             }
           ></img>
           <div>

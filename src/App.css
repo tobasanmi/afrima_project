@@ -92,7 +92,7 @@
 .landinpageWrapper {
     /* background-color: #686868; */
     height: 600px;
-    background-image: url("./images/CANEX1.png");
+    background-image: url("./images/afrima1.jpg");
 }
 
 .landingPage {
@@ -110,7 +110,9 @@
     margin: 10px;
     font-size: 30px;
 }
-
+.landingPageWordingsHeader{
+    margin-top:-10px;
+}
 .pipeBottom,
 .pipeTop {
     color: white;
@@ -229,9 +231,8 @@ p{
     left:320px;
     width:50%;
     text-align:center;
-    border: 2px solid white;
+    border: 2px solid black;
     border-radius: 10px;
-    background-color: #ffd916;
     background-image: url("./images/afrima1.jpg");
 
 }
@@ -267,7 +268,7 @@ p{
             width:200px;
         }
         .landingPageWordingsHeader{
-            font-size: 20px;
+            font-size: 10px;
         }
         .pipeBottom,
         .pipeTop{
@@ -348,6 +349,17 @@ p{
            z-index:20;
 
         }
+        .signUpWrapper{
+            left: 120px;
+            width:50%;
+        }
+        .signUpForm{
+            margin-left:15px;
+        }
+        .signUpSubmitButton{
+            width:100px;
+            margin-left:10px;
+        }
 
     }
     /* Media query for Tablets */
@@ -365,5 +377,16 @@ p{
    .button{
     width:200px;
    }
-   
+   .signUpWrapper{
+    left: 200px;
+    width:50%;
+}
+.signUpForm{
+    margin-left:75px;
+}
+.signUpSubmitButton{
+    width:150px;
+    margin-left:0px;
+}
+
 }
