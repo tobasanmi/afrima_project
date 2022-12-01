@@ -9,7 +9,8 @@ export default function Signup({props}) {
         firstname: "",
         lastname: "",
         email: "",
-        password:""
+        password:"",
+        confirmPassword:""
     })
 
     const handleChange = (e) => {
@@ -78,9 +79,23 @@ export default function Signup({props}) {
                 name="password"
                 onChange={handleChange}
                 value={input.password}
-                className="form-control"
+                className="form-control signUppassword"
                 id="inputPassword"
                 placeholder=" Password"
+                required
+              />
+            </div>
+          </div>
+          <div className="form-group row">
+            <div className="col-sm-10">
+              <input
+                type="password"
+                name="confirmPassword"
+                onChange={handleChange}
+                value={input.confrimPassword}
+                className="form-control"
+                id="inputPassword"
+                placeholder=" confirm Password"
                 required
               />
             </div>
