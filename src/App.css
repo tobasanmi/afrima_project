@@ -7,7 +7,7 @@
     align-items: center;
     position:sticky;
     top:0px;
-} 
+}
 
 .linksWrapper {
     display: flex;
@@ -92,7 +92,7 @@
 .landinpageWrapper {
     /* background-color: #686868; */
     height: 600px;
-    background-image: url("./images/afrima3.jpg");
+    background-image: url("./images/CANEX1.png");
 }
 
 .landingPage {
@@ -249,13 +249,13 @@ p{
     margin:30px;
 }
       /* Media Query for Mobile Devices */
-      @media (min-width: 320px) and (max-width:480px) {
+      @media (min-width: 36px) and (max-width:480px) {
     .signUpForm{
         display:inline;
     }
     .form-control{
         width:120px;
-        margin-left:20px
+        margin-left:35px
     }
     .signUpSubmitButton{
         width:100px;
@@ -264,6 +264,9 @@ p{
     }
     .signUpWrapper{
         margin-left: -200px;
+    }
+    .hamburger{
+        margin-left: 70px;
     }
       }
 
@@ -274,7 +277,7 @@ p{
             width :100%;
         }
         .landinpageWrapper{
-            height: 300px;
+            height: 50vh;
         }
         .iconWrapper{
             margin:10px;
@@ -337,6 +340,7 @@ p{
         }
         .submitButton{
             width:200px;
+            margin-left: 20px;
         }
         .contactByEmail{
             display :none
@@ -351,7 +355,7 @@ p{
         .hamburger{
             display: inline;
             margin-top: 20px;
-            margin-left: 30px;
+            margin-left: 70px;
         }
         .form{display:none;
         }

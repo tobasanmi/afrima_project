@@ -18,7 +18,7 @@ export default function SwiperView () {
     <Swiper
     modules={[Autoplay, Pagination, Navigation]}
     slidesPerView={1}
-    autoplay={true}
+    autoplay={{delay: 5000}}
     pagination={{
       clickable: true,
     }}
