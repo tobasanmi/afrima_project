@@ -6,12 +6,13 @@ import afrimalogo from "../images/afrimaLogo.png"
 import ContactForm from "../components/contactForm";
 import Navbar from "../components/Navbar";
 import LandingPage from "./landingPage";
+import SwiperView from "../components/swiper";
 
 export default function About() {
   return (
     <div className="aboutPageWrapper">
       <Navbar />
-      <LandingPage />
+      <SwiperView/>
       <div className="aboutContainer">
         <div className="whoWeAreContainer">
           <div className="whoWeAreWrapper">

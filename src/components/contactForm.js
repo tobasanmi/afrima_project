@@ -36,6 +36,7 @@ export default function ContactForm() {
       </div>
       <div className="contactByEmail">
         <p>For more information or to book your stand</p>
+        {/* <img src ={AfrimaLogo}></img> */}
       </div>
     </div>
   );
