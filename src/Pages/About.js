@@ -7,6 +7,8 @@ import ContactForm from "../components/contactForm";
 import Navbar from "../components/Navbar";
 import LandingPage from "./landingPage";
 import SwiperView from "../components/swiper";
+import ContactFormModalSuccess from "../modal/contactFormModalSuccess";
+import ContactFormModalFailure from "../modal/contactFormModalFailure";
 
 export default function About() {
   return (
@@ -115,7 +117,7 @@ export default function About() {
           </div>
         </div>
       </div>
-      <ContactForm />
+      <ContactForm  modalSuccess ={<ContactFormModalSuccess/>} modalfailure = {<ContactFormModalFailure/>}/>
     </div>
   );
 }
