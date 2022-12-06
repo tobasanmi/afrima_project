@@ -249,7 +249,7 @@ p{
     margin:30px;
 }
       /* Media Query for Mobile Devices */
-      @media (max-width: 412px) {
+      /* @media (max-width: 412px) {
         .signUpWrapper{
             height: 50vh;
         }
@@ -257,7 +257,7 @@ p{
             margin-left: 0px;
         }
         
-      }
+      } */
 
 
       @media (max-width: 480px) {
@@ -394,8 +394,13 @@ p{
     width:200px;
    }
    .signUpWrapper{
-    left: 200px;
+    left: 100px;
     width:50%;
+    
+}
+.signUpContainer{
+    height:100%;
+    background-image: url("./images/afrima3.jpg");
 }
 .signUpForm{
     margin-left:75px;
