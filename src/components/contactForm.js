@@ -3,14 +3,13 @@ import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 import ContactFormModalSuccess from "../modal/contactFormModalSuccess";
-import ContactFormModalFailure from "../modal/contactFormModalFailure";
 
 
 
 
-export default function ContactForm({modalSuccess}) {
+
+export default function ContactForm() {
   const history = useNavigate()
-
   const [input, setInput] = useState({
       name: "",
       email: "",
@@ -18,36 +17,51 @@ export default function ContactForm({modalSuccess}) {
   })
 
   const [modalShow, setModalShow] = useState(false);
+  const [modalResponse, setModalResponse] = useState("");
+  const [modalSuccessResponse, setModalSuccessResponse] = useState("Failed");
+
 
   const handleChange = (e) => {
     setInput({...input, [e.target.name]:e.target.value})
   }
 
-  const showModal = (e) => {
-    e.preventDefault()
-    if(modalShow == true){
-      return modalSuccess
-    }
-  }
-
+  // const showModal = (e) => {
+  //   e.preventDefault()
+  //   if(modalShow == true){
+  //     return modalSuccess
+  //   }
+  // }
   const handleSubmit = (e) => {
     e.preventDefault()
+    
     axios.post("https://exuberant-calf-yoke.cyclic.app/api/v1/user/feedback",input)
     .then(res => {
-      console.log(res, "res")
-      if( res.status == 201){
+      console.log(res.data.message.code, "res")
+      if( res.data.message.code == 201){
         setModalShow(true)
+        setModalResponse("success")
+        // setModalShow(true)
       }
       // else{
       //   return modalFailure
       // }
     })
-    .catch(err => console.log(err))
+    .catch(err => {
+      // console.log();
+      setModalShow(true)
+        setModalResponse(err.response.data.name)
+        setModalResponse(err.response.data.email)
+    })
     
   }
-
-
+  // setTimeout(()=> {
+  //   if (modalShow == true){
+  //     setModalShow(false)
+  //   }
+  // }, 3000)
   return (
+    <>
+    <ContactFormModalSuccess modalStatus={modalShow} response={modalResponse} />
     <div className="contactFormWrapper">
       {/* <div className="contactFormHeader">
        
@@ -58,7 +72,7 @@ export default function ContactForm({modalSuccess}) {
         <p className="contactParagraph">
           Should you wish to exihibit at Afrima or if you would like to know more
         </p>
-      <form onSubmit={handleSubmit,showModal}>
+      <form onSubmit={handleSubmit}>
   <div className="form-group row">
     <div className="col-sm-10"> 
       <input type="text" className="form-control name"  id="inputEmail3" placeholder="Name" name = "name" value = {input.name} onChange={handleChange}/>
@@ -85,5 +99,6 @@ export default function ContactForm({modalSuccess}) {
         {/* <img src ={AfrimaLogo}></img> */}
       </div>
     </div>
+    </>
   );
 }
