@@ -6,12 +6,15 @@ import afrimalogo from "../images/afrimaLogo.png"
 import ContactForm from "../components/contactForm";
 import Navbar from "../components/Navbar";
 import LandingPage from "./landingPage";
+import SwiperView from "../components/swiper";
+import ContactFormModalSuccess from "../modal/contactFormModalSuccess";
+import ContactFormModalFailure from "../modal/contactFormModalFailure";
 
 export default function About() {
   return (
     <div className="aboutPageWrapper">
       <Navbar />
-      <LandingPage />
+      <SwiperView/>
       <div className="aboutContainer">
         <div className="whoWeAreContainer">
           <div className="whoWeAreWrapper">
@@ -114,7 +117,7 @@ export default function About() {
           </div>
         </div>
       </div>
-      <ContactForm />
+      <ContactForm  modalSuccess ={<ContactFormModalSuccess/>} modalfailure = {<ContactFormModalFailure/>}/>
     </div>
   );
 }

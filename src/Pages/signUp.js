@@ -19,9 +19,9 @@ export default function Signup({props}) {
 
    const handleSubmit = (e)=> {
     e.preventDefault()
-    axios.post("https://real-pink-badger-wig.cyclic.app/api/v1/user/newUser", input)
+    axios.post("https://exuberant-calf-yoke.cyclic.app/api/v1/user/newUser", input)
     .then(res => {console.log(res,"res")
-    if(res.status == 201){
+    if(res.status == 200){
       history("/");
     }}
     )

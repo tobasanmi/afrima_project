@@ -1,3 +1,6 @@
+/* body{
+    background-image: url("./images/afrima1.jpg");
+} */
 .navBarContainer {
     background-color: #ffd916;
     width: 100%;
@@ -88,7 +91,9 @@
     width: 300px;
     height: 30px;
 }
-
+/* .aboutContainer{
+    background: #686868;
+} */
 .landinpageWrapper {
     /* background-color: #686868; */
     height: 600px;
@@ -97,6 +102,8 @@
 
 .landingPage {
     display: flex;
+    background: rgba(0, 0, 0, 0.5);
+    height: 600px;
 }
 
 .iconWrapper {
@@ -206,9 +213,10 @@ li{
 }
 .images{
     width:50%;
-    border-radius:50%;
+    /* border-radius:50%; */
     height:600px;
     margin:20px;
+    box-shadow: 15px 15px 8px rgb(127, 131, 127);
 }
 .hamburger{
     display: none
@@ -249,15 +257,26 @@ p{
     margin:30px;
 }
       /* Media Query for Mobile Devices */
-      /* @media (max-width: 412px) {
-        .signUpWrapper{
-            height: 50vh;
-        }
-        .signUpForm{
-            margin-left: 0px;
-        }
-        
-      } */
+      @media (min-width: 36px) and (max-width:480px) {
+    .signUpForm{
+        display:inline;
+    }
+    .form-control{
+        width:120px;
+        margin-left:35px
+    }
+    .signUpSubmitButton{
+        width:100px;
+        font-size:15px;   
+        margin-right: -9px;    
+    }
+    .signUpWrapper{
+        margin-left: -200px;
+    }
+    .hamburger{
+        margin-left: 70px;
+    }
+      }
 
 
       @media (max-width: 480px) {
@@ -266,7 +285,7 @@ p{
             width :100%;
         }
         .landinpageWrapper{
-            height: 300px;
+            height: 50vh;
         }
         .iconWrapper{
             margin:10px;
@@ -329,6 +348,7 @@ p{
         }
         .submitButton{
             width:200px;
+            margin-left: 20px;
         }
         .contactByEmail{
             display :none
@@ -343,7 +363,7 @@ p{
         .hamburger{
             display: inline;
             margin-top: 20px;
-            margin-left: 30px;
+            margin-left: 70px;
         }
         .form{display:none;
         }
@@ -359,25 +379,8 @@ p{
            background-color: #ffd916;
            z-index:20;
 
-        }
-        .signUpContainer{
-            height: 100vh;
-
-        }
-        .signUpWrapper{
-            top:10px;
-            /* margin-left:-100px; */
-            width:70%;
-        }
-        .signUpForm{
-            background-color: #ffd916;
-        }
-        .signUpSubmitButton{
-            width:100px;
-            margin-left:10px;
-        }
-
     }
+}
     /* Media query for Tablets */
 
     @media (max-width: 768px) {
@@ -394,20 +397,14 @@ p{
     width:200px;
    }
    .signUpWrapper{
-    left: 100px;
-    width:50%;
-    
-}
-.signUpContainer{
-    height:100%;
-    background-image: url("./images/afrima3.jpg");
-}
-.signUpForm{
-    margin-left:75px;
-}
-.signUpSubmitButton{
-    width:150px;
+    display:inline;
+    margin-left: -200px;
+    margin-right:50px;
+   }
+   .signUpForm{
+    margin-left:    80px;
+   }
+   .signUpSubmitButton{
     margin-left:0px;
-}
-
+   }
 }

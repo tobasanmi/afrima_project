@@ -7,6 +7,7 @@ import About from './Pages/About';
 import LandingPage from './Pages/landingPage';
 import Event from './Pages/Event';
 import Signup from './Pages/signUp';
+import ContactFormModalSuccess from './modal/contactFormModalSuccess';
 
 function App() {
   return (
@@ -16,7 +17,7 @@ function App() {
         <Route exact path ="/events" element={<Event/>}/>
         <Route exact path ="/register" element={<Signup/>}/>
       </Routes>
-     
+     {/* <ContactFormModalSuccess/> */}
     </div>
   );
 }
